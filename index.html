@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luara - Kreu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/NavFooter.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav">
+            <div class="logo-position">
+                <img src="img/Logo.png" alt="Luara" class="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li id="focus"><a href="#">Kreu</a></li>
+                    <li><a href="html/menu.html">Menu</a></li>
+                    <li><a href="html/galeri.html">Galeri</a></li>
+                    <li><a href="html/Kontakt.html">Kontakti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>MIRESEVINI</h1>
+        <div class="section">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+
+                  <img src="img/Slide 1.png" >
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/Slide 2.png" >
+                </div>
+                
+                <div class="mySlides fade">
+
+                  <img src="img/Slide 3.png">
+                </div>
+                                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+
+                </div>
+                
+        </div>
+    </section>
+
+    <main class="history">
+        <div class="inner-history">
+        <div class="dark">
+            <h2>Luara Ketu</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium dicta voluptatibus cumque ducimus reiciendis fugiat quidem facilis officiis autem, quod inventore placeat architecto nam quasi laudantium eos sit libero id ratione, nobis eligendi fuga eaque. Voluptates culpa tempore illo veritatis tenetur deserunt libero corrupti impedit nesciunt vitae. Asperiores inventore, ex perferendis sunt sed reiciendis provident repellat dolorum error eius modi illum neque necessitatibus quos quisquam iure corporis maxime quasi accusamus unde voluptatem quam vel! Dolorem voluptates perspiciatis nam tenetur aperiam quaerat fugiat ab at tempora ipsa tempore nihil distinctio laborum aspernatur temporibus architecto atque facere, quidem neque ad blanditiis magnam nisi molestias! Fugiat repellat distinctio sunt accusamus sit quas doloremque dignissimos tempora deleniti aspernatur, eligendi minima accusantium, id veritatis nisi itaque ipsum incidunt est asperiores sapiente rerum totam dolorem? Molestiae nemo perferendis a voluptatem. Repudiandae voluptatum impedit in sed, inventore vitae. Necessitatibus nemo amet tenetur vitae dolorum, rem officia.
+
+            </p>
+        </div>
+        <div class="emty"></div>
+        </div>
+
+    </main>
+
+    <aside>
+        <h1>POROSITNI SIPAS RASTIT:</h1>
+        <div class="container">
+            <div class="block">
+                <img src="img/cake-with-heart.png" alt="">
+                <h3>Martesa</h3>
+                <div class="button"><a href="#">Porositni</a></div>
+            </div>
+            <div class="block">
+                <img src="img/sweet-cake-piece.png" alt="">
+                <h3>Perditshmeri</h3>
+                <div class="button"><a href="#">Porositni</a></div>
+            </div>
+            <div class="block">
+                <img src="img/birthday-cake.png" alt="">
+                <h3>Ditelindje</h3>
+                <div class="button"><a href="#">Porositni</a></div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <h3>Kontakt:</h3>
+        <h3>+355 68 12 34 567</h3>
+        
+        <div class="container  address">
+            <p>Adresa 1: Rruga Luigj Gurakuqi 41, Tirana</p>
+            <div class="line"></div>
+            <p>Adresa 2: Rruga Myslym Shyri</p>
+        </div>
+
+        <div class="container">
+            <p class="cp">Copyright © 2023 Luara. All rights reserved.</p>
+            <div class="social">
+                <a href="http://www.instagram.com"><img src="img/instagram.png" alt=""></a>
+                <a href="http://www.facebook.com"><img src="img/facebook-circular-logo.png" alt=""></a>
+                <a href="http://www.youtube.com"><img src="img/whatsapp.png" alt=""></a>
+            </div>
+
+            <p class="dead">Copyright © 2023 Luara. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2500); 
+    }
+    </script>
+
+    
